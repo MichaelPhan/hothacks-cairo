@@ -1,0 +1,96 @@
+/* //////////////////////////////////////////////////////
+LEARN PAGE STYLES
+////////////////////////////////////////////////////// */
+
+#content-learn{
+	width:12000px;
+	
+	.instructions{
+		z-index:1;
+		color:#000;
+		position:fixed;
+	}
+	
+	#blank-scrollbox{
+		width:100%;
+		height:8000px;
+	}
+	
+	.parallax{
+		.parallax-layer, .parallax-layer-img{
+			position:fixed;
+			bottom:0;
+			
+			img{
+				max-width:none;
+			}
+		}
+		
+		#layer-front{
+			width:100%;
+			height:43px;
+			background:url(../../../asset/img/front.png);
+		}
+		#layer-middle{ 
+			width:100%;
+			height:430px;
+			bottom:0;
+			background:url(../../../asset/img/middle.png);
+		}
+		#layer-back{ 
+			width:100%;
+			bottom: 50px;
+			height:266px;
+			background:url(../../../asset/img/back.png);
+		}
+		
+		.parallax-cta img{
+			cursor:pointer;
+		}
+	}
+	
+	#parallax-bg{
+		width:100%;
+		height:200%;
+		position:fixed;
+		top:0;
+		background:#000;
+	}
+	
+	#parallax-container{
+		
+	}
+	
+	#content-container{
+		position:fixed;
+		width:100%;
+		height:470px;
+		background:#000;
+		bottom:-470px;
+		overflow-y:auto;
+		
+		img{
+			width:100%;
+		}
+	}
+	
+	#overlay-container{
+		width:100%;
+		height:100%;
+		position:fixed;
+		top:0;
+		img{
+			width: 100%;
+			height: 100%;
+		}
+		opacity:0.2;
+	}
+	
+	.content-page{
+		display:none;
+	}
+}
+
+.locked{
+	overflow-y: hidden!important;
+}

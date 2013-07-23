@@ -1,0 +1,104 @@
+/* //////////////////////////////////////////////////////
+UNIVERSAL PAGE STYLES
+////////////////////////////////////////////////////// */
+
+html{
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+[class*='col-'] {
+	padding-bottom: 10px;
+}
+
+#main-loader{
+	z-index: 100000;
+	position: fixed;
+	left:50%;
+	top:50%;
+	margin-left:-40px;
+	margin-top:-10px;
+}
+
+.grid {
+	max-width: 800px;
+}
+
+h1, h2, h3, h4, h5, .orange{
+	color:#d5642a;
+}
+
+p{
+	color:#fff;
+}
+
+body{
+	background-color: #000;
+}
+
+.title, .instructions{
+	font-family: 'Raleway', sans-serif;
+}
+
+.small{
+	font-size:18px;
+	line-height:0;
+}
+
+.instructions{
+	color: #fff;
+	position: absolute;
+	text-align: center;
+	top: 40%;
+	width: 100%;
+	font-family: 'Raleway', sans-serif;
+	font-size:24px;
+	line-height: 24px;
+}
+
+/* unsure why home.less isn't working */
+#content-home{
+	#home-img img{
+		margin-left: -510px;
+		left: 50%;
+		position: fixed;
+	}
+	
+	#first-title, .instructions{
+		color: #fff;
+		position: absolute;
+		text-align: center;
+		top: 40%;
+		width: 100%;
+		font-family: 'Raleway', sans-serif;
+		font-size: 38.5px;
+		line-height: 40px;
+	}
+	
+	.instructions{
+		font-size:24px;
+		line-height: 24px;
+	}
+	
+	#first-title, #second-title{
+		display:none;
+	}
+}
+
+.load-content{
+	display:none!important;
+}
+
+#home-footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: #222;
+	padding: 5px;
+	text-align: right;
+	
+	a{
+		color: #fff;
+	}
+}
